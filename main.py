@@ -1,16 +1,8 @@
-# text cleaning
-import nltk
-from nltk.tokenize import word_tokenize
-import string
-from nltk.corpus import stopwords
-from nltk.stem.porter import PorterStemmer
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
-
-# transformers
+# transformers, SOURCE: https://huggingface.co/ProsusAI/finbert
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline, AutoModelForTokenClassification
 
 # stock prices
-import yfinance
+import yfinance # SOURCE: https://aroussi.com/post/python-yahoo-finance
 
 # graphing
 import plotly.graph_objects as go
